@@ -1,5 +1,3 @@
-// api/comments.js
-
 import { MongoClient } from 'mongodb';
 
 let cachedClient = null;
@@ -38,8 +36,12 @@ export default async (req, res) => {
       return res.status(400).json({ error: 'Comment and timestamp are required' });
     }
 
+    // Generate a new ID
+    const lastComment = await commentsCollection.findOne({}, { sort: { _id: -1 } });
+    const nextId = lastComment ? parseInt(lastComment._id, 10) + 1 : 123456793;
+
     // Insert comment into MongoDB
-    const newComment = { name: name || 'Anonymous', comment, isSpoiler, timestamp };
+    const newComment = { _id: nextId.toString(), name: name || 'Anonymous', comment, isSpoiler, timestamp };
     await commentsCollection.insertOne(newComment);
 
     return res.status(201).json(newComment);

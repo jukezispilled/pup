@@ -7,6 +7,7 @@ export default function Component() {
   const [replies, setReplies] = useState([]);
   const [error, setError] = useState('');
   const [lastPostTime, setLastPostTime] = useState(0); // Track the time of the last post
+  const [nextId, setNextId] = useState(123456793); // Initial ID, you might fetch this from the server if needed
 
   // Fetch comments when the component mounts
   useEffect(() => {
@@ -19,6 +20,9 @@ export default function Component() {
           timestamp: new Date(reply.timestamp).toLocaleString(),
         }));
         setReplies(adjustedReplies);
+        // Update nextId based on the highest ID from fetched comments
+        const maxId = Math.max(...data.map(reply => parseInt(reply._id, 10)));
+        setNextId(maxId + 1);
       })
       .catch(err => console.error('Error fetching comments:', err));
   }, []);
@@ -44,8 +48,7 @@ export default function Component() {
       comment: comment.trim(),
       isSpoiler,
       timestamp: new Date().toLocaleString(),
-      // Simulate a new ID for demonstration purposes
-      _id: new Date().getTime().toString(),
+      _id: nextId.toString(), // Use the counter for the ID
     };
 
     fetch('/api/comments', {
@@ -64,6 +67,7 @@ export default function Component() {
         setComment('');
         setIsSpoiler(false);
         setLastPostTime(now); // Update the last post time
+        setNextId(nextId + 1); // Increment the ID counter
       })
       .catch((err) => console.error('Error submitting comment:', err));
   };
@@ -109,7 +113,7 @@ export default function Component() {
                 <div>
                   <div>
                     <span className="font-bold text-[#117743]">Anonymous</span>
-                    <span className="text-xs"> 06/15/23(Thu)12:34:56 No.123456789</span>
+                    <span className="text-xs"> 09/16/24(Mon)3:34:56 No.123456789</span>
                   </div>
                   <div className="text-xs mt-1">File: <span className="text-[#0000EE]">truth.jpg</span> (39 KB, 250x250)</div>
                   <p className="mt-2 whitespace-pre-wrap">
@@ -128,7 +132,7 @@ export default function Component() {
               <div className="p-2 bg-[#F0E0D6]">
                 <div>
                   <span className="font-bold text-[#117743]">Anonymous</span>
-                  <span className="text-xs"> 06/15/23(Thu)12:35:23 No.123456790</span>
+                  <span className="text-xs"> 09/16/24(Mon)3:35:03 No.123456790</span>
                 </div>
                 <p className="mt-2 whitespace-pre-wrap">
                   I'm in. My wife just can't know
@@ -144,7 +148,7 @@ export default function Component() {
                   <div>
                     <div>
                       <span className="font-bold text-[#117743]">Anonymous</span>
-                      <span className="text-xs"> 06/15/23(Thu)12:36:45 No.123456791</span>
+                      <span className="text-xs"> 09/16/24(Mon)3:35:56 No.123456791</span>
                     </div>
                     <div className="text-xs mt-1">File: <span className="text-[#0000EE]">chemtrails.png</span> (15 KB, 100x100)</div>
                     <p className="mt-2 whitespace-pre-wrap">
@@ -159,7 +163,7 @@ export default function Component() {
               <div className="p-2 bg-[#F0E0D6]">
                 <div>
                   <span className="font-bold text-[#117743]">Anonymous</span>
-                  <span className="text-xs"> 06/15/23(Thu)12:37:12 No.123456792</span>
+                  <span className="text-xs"> 09/16/24(Mon)3:35:56 No.123456792</span>
                 </div>
                 <p className="mt-2 whitespace-pre-wrap">
                   Chemtrails are just the tip of the iceberg. Bill Gates and the cabal made my cousin gay from the mosquitoes
