@@ -81,7 +81,7 @@ export default function Component() {
             <div className="flex space-x-4">
               <a href="https://x.com/findtruthsol" className="text-[#34345C] font-bold">[Twitter/X]</a>
               <a href="https://t.me/TruthPortalsol" className="text-[#34345C] font-bold">[Telegram]</a>
-              <a href="https://pump.fun/board" className="text-[#34345C] font-bold">[Pump]</a>
+              <a href="https://pump.fun/CmesUZPFTjVNZmJsUTbShRCh2vSWtiKXVvxCmutgpump" className="text-[#34345C] font-bold">[Pump]</a>
             </div>
             <div className="flex space-x-4">
               <a href="#" className="text-[#34345C] font-bold">[a]</a>
@@ -98,7 +98,7 @@ export default function Component() {
         <div className="max-w-5xl mx-auto p-2">
           <div className="bg-[#D6DAF0] p-2 mb-4">
             <h1 className="text-[#AF0A0F] font-bold text-lg">/truth/ - Conspiracy</h1>
-            <p className="text-xs mt-1">CA: processing...</p>
+            <p className="text-xs mt-1">CA: CmesUZPFTjVNZmJsUTbShRCh2vSWtiKXVvxCmutgpump</p>
           </div>
 
           {/* Thread */}
