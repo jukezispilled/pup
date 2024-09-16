@@ -87,7 +87,7 @@ export default function Component() {
               <div>
                 <div>
                   <span className="font-bold text-[#117743]">Anonymous</span>
-                  <span className="text-xs"> 06/15/23(Thu)12:34:56 No.123456789</span>
+                  <span className="text-xs"> {new Date().toLocaleDateString()}({new Date().toLocaleDateString('en-US', { weekday: 'short' })}){new Date().toLocaleTimeString()} No.123456789</span>
                 </div>
                 <div className="text-xs mt-1">File: <span className="text-[#0000EE]">ufo_sighting.jpg</span> (39 KB, 250x250)</div>
                 <p className="mt-2 whitespace-pre-wrap">
@@ -110,7 +110,7 @@ export default function Component() {
             <div className="p-2 bg-[#F0E0D6]">
               <div>
                 <span className="font-bold text-[#117743]">Anonymous</span>
-                <span className="text-xs"> 06/15/23(Thu)12:35:23 No.123456790</span>
+                <span className="text-xs"> {new Date().toLocaleDateString()}({new Date().toLocaleDateString('en-US', { weekday: 'short' })}){new Date().toLocaleTimeString()} No.123456790</span>
               </div>
               <p className="mt-2 whitespace-pre-wrap">
                 <span className="text-[#789922]">&gt;believing the moon landing was faked</span>
@@ -132,7 +132,7 @@ export default function Component() {
                 <div>
                   <div>
                     <span className="font-bold text-[#117743]">Anonymous</span>
-                    <span className="text-xs"> 06/15/23(Thu)12:36:45 No.123456791</span>
+                    <span className="text-xs"> {new Date().toLocaleDateString()}({new Date().toLocaleDateString('en-US', { weekday: 'short' })}){new Date().toLocaleTimeString()} No.123456791</span>
                   </div>
                   <div className="text-xs mt-1">File: <span className="text-[#0000EE]">chemtrails.png</span> (15 KB, 100x100)</div>
                   <p className="mt-2 whitespace-pre-wrap">
@@ -147,7 +147,7 @@ export default function Component() {
             <div className="p-2 bg-[#F0E0D6]">
               <div>
                 <span className="font-bold text-[#117743]">Anonymous</span>
-                <span className="text-xs"> 06/15/23(Thu)12:37:12 No.123456792</span>
+                <span className="text-xs"> {new Date().toLocaleDateString()}({new Date().toLocaleDateString('en-US', { weekday: 'short' })}){new Date().toLocaleTimeString()} No.123456792</span>
               </div>
               <p className="mt-2 whitespace-pre-wrap">
                 <span className="italic text-[#789922]">&gt;&gt;123456791</span>
@@ -156,13 +156,13 @@ export default function Component() {
                 As for aliens, they've been here for decades. Area 51 is just one of many facilities.
               </p>
             </div>
-            
+
             {/* New replies */}
             {replies.map((reply) => (
               <div key={reply._id} className="p-2 bg-[#F0E0D6]">
                 <div>
                   <span className="font-bold text-[#117743]">{reply.name}</span>
-                  <span className="text-xs"> {reply.timestamp} No.{reply._id}</span>
+                  <span className="text-xs"> {new Date(reply.timestamp).toLocaleDateString()}({new Date(reply.timestamp).toLocaleDateString('en-US', { weekday: 'short' })}){new Date(reply.timestamp).toLocaleTimeString()} No.{reply._id}</span>
                 </div>
                 <p className={`mt-2 whitespace-pre-wrap ${reply.isSpoiler ? 'bg-black text-black hover:bg-transparent hover:text-inherit' : ''}`}>
                   {reply.comment}
