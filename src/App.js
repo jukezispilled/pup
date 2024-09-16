@@ -223,7 +223,7 @@ export default function Component() {
           </form>
         </div>
       </div>
-      <div className='w-full flex justify-center py-2 bg-[#D6DAF0] text-xs px-[5%]'>
+      <div className='w-full flex justify-center py-2 bg-[#D6DAF0] text-xs px-[5%] absolute bottom'>
         <div>All trademarks and copyrights on this page are owned by their respective parties. Images uploaded are the responsibility of the Poster. Comments are owned by the Poster.</div>
       </div>
     </div>
