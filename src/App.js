@@ -98,7 +98,7 @@ export default function Component() {
                   <span className="font-bold text-[#117743]">Anonymous</span>
                   <span className="text-xs"> 06/15/23(Thu)12:34:56 No.123456789</span>
                 </div>
-                <div className="text-xs mt-1">File: <span className="text-[#0000EE]">ufo_sighting.jpg</span> (39 KB, 250x250)</div>
+                <div className="text-xs mt-1">File: <span className="text-[#0000EE]">truth.jpg</span> (39 KB, 250x250)</div>
                 <p className="mt-2 whitespace-pre-wrap">
                   Hey /x/,
 
@@ -222,6 +222,9 @@ export default function Component() {
             </div>
           </form>
         </div>
+      </div>
+      <div className='w-full flex justify-center py-2 bg-[#D6DAF0] text-xs px-[5%]'>
+        <div>All trademarks and copyrights on this page are owned by their respective parties. Images uploaded are the responsibility of the Poster. Comments are owned by the Poster.</div>
       </div>
     </div>
   );
