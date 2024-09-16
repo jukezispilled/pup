@@ -99,15 +99,11 @@ export default function Component() {
                 </div>
                 <div className="text-xs mt-1">File: <span className="text-[#0000EE]">truth.jpg</span> (39 KB, 250x250)</div>
                 <p className="mt-2 whitespace-pre-wrap">
-                  Hey /x/,
+                  Hey /truth/,
 
-                  I was just watching a documentary on Area 51. Do you guys really believe they're hiding alien spacecraft there? Also, what's the deal with those weird black helicopters people keep seeing? Here's what I've gathered so far:
-
-                  <span className="text-[#789922]">&gt;Area 51 is a front for reverse-engineering alien technology
-                    &gt;Black helicopters are part of the New World Order surveillance program
-                    &gt;The moon landing was faked as a distraction</span>
-
-                  What do you think? Any truth to these or am I going down a rabbit hole?
+                  after Trump getting almost eliminated for the 2nd time I started to think...wtf is really going on?
+                  What do you think? From Epstein to COVID to now. The last couple years have felt like a real fuckery, pardon my french.
+                  I'm putting together a team to dive in to every conspiracy to ever live and find out the truth. Care to join?
                 </p>
               </div>
             </div>
@@ -121,19 +117,14 @@ export default function Component() {
                 <span className="text-xs"> 06/15/23(Thu)12:35:23 No.123456790</span>
               </div>
               <p className="mt-2 whitespace-pre-wrap">
-                <span className="text-[#789922]">&gt;believing the moon landing was faked</span>
-
-                Come on man, that's a tired one. The real conspiracy is that NASA fakes new discoveries to justify their budget.
-
-                <span className="italic text-[#789922]">&gt;&gt;123456789</span>
-                About the black helicopters, though, it's real. I've seen them circling in my area late at night.
+                I'm in. My wife just can't know
               </p>
             </div>
 
             <div className="p-2 bg-[#F0E0D6]">
               <div className="flex items-start space-x-2">
                 <img
-                  src="/placeholder.svg?height=100&width=100"
+                  src="/chem.png"
                   alt="Reply image"
                   className="w-[100px] h-[100px] border border-[#D9BFB7]" />
                 <div>
@@ -145,7 +136,7 @@ export default function Component() {
                   <p className="mt-2 whitespace-pre-wrap">
                     If you want real answers, look into chemtrails. The government is spraying chemicals in the sky to control us.
 
-                    Wake up, sheeple.
+                    Wake up, sheeple
                   </p>
                 </div>
               </div>
@@ -157,10 +148,7 @@ export default function Component() {
                 <span className="text-xs"> 06/15/23(Thu)12:37:12 No.123456792</span>
               </div>
               <p className="mt-2 whitespace-pre-wrap">
-                <span className="italic text-[#789922]">&gt;&gt;123456791</span>
-                Chemtrails are just the tip of the iceberg. You need to look into HAARP – it's controlling the weather.
-
-                As for aliens, they've been here for decades. Area 51 is just one of many facilities.
+                Chemtrails are just the tip of the iceberg. Bill Gates and the cabal made my cousin gay from the mosquitoes
               </p>
             </div>
 
