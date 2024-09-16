@@ -56,7 +56,7 @@ export default function Component() {
   };
 
   return (
-    <div className="bg-[#EEF2FF] min-h-screen font-sans text-[13px] text-[#000000]">
+    <><div className="bg-[#EEF2FF] min-h-screen font-sans text-[13px] text-[#000000]">
       {/* Header */}
       <header className="bg-[#D1D5EE] border-b border-[#B7C5D9] p-1">
         <div className="max-w-5xl mx-auto flex justify-between items-center">
@@ -91,8 +91,7 @@ export default function Component() {
               <img
                 src="/truth.png"
                 alt="Post image"
-                className="w-[100px] md:w-[150px] border border-[#D9BFB7]"
-              />
+                className="w-[100px] md:w-[150px] border border-[#D9BFB7]" />
               <div>
                 <div>
                   <span className="font-bold text-[#117743]">Anonymous</span>
@@ -105,8 +104,8 @@ export default function Component() {
                   I was just watching a documentary on Area 51. Do you guys really believe they're hiding alien spacecraft there? Also, what's the deal with those weird black helicopters people keep seeing? Here's what I've gathered so far:
 
                   <span className="text-[#789922]">&gt;Area 51 is a front for reverse-engineering alien technology
-                  &gt;Black helicopters are part of the New World Order surveillance program
-                  &gt;The moon landing was faked as a distraction</span>
+                    &gt;Black helicopters are part of the New World Order surveillance program
+                    &gt;The moon landing was faked as a distraction</span>
 
                   What do you think? Any truth to these or am I going down a rabbit hole?
                 </p>
@@ -123,7 +122,7 @@ export default function Component() {
               </div>
               <p className="mt-2 whitespace-pre-wrap">
                 <span className="text-[#789922]">&gt;believing the moon landing was faked</span>
-                
+
                 Come on man, that's a tired one. The real conspiracy is that NASA fakes new discoveries to justify their budget.
 
                 <span className="italic text-[#789922]">&gt;&gt;123456789</span>
@@ -136,8 +135,7 @@ export default function Component() {
                 <img
                   src="/placeholder.svg?height=100&width=100"
                   alt="Reply image"
-                  className="w-[100px] h-[100px] border border-[#D9BFB7]"
-                />
+                  className="w-[100px] h-[100px] border border-[#D9BFB7]" />
                 <div>
                   <div>
                     <span className="font-bold text-[#117743]">Anonymous</span>
@@ -146,7 +144,7 @@ export default function Component() {
                   <div className="text-xs mt-1">File: <span className="text-[#0000EE]">chemtrails.png</span> (15 KB, 100x100)</div>
                   <p className="mt-2 whitespace-pre-wrap">
                     If you want real answers, look into chemtrails. The government is spraying chemicals in the sky to control us.
-                    
+
                     Wake up, sheeple.
                   </p>
                 </div>
@@ -161,11 +159,11 @@ export default function Component() {
               <p className="mt-2 whitespace-pre-wrap">
                 <span className="italic text-[#789922]">&gt;&gt;123456791</span>
                 Chemtrails are just the tip of the iceberg. You need to look into HAARP – it's controlling the weather.
-                
+
                 As for aliens, they've been here for decades. Area 51 is just one of many facilities.
               </p>
             </div>
-            
+
             {/* New replies */}
             {replies.map((reply) => (
               <div key={reply._id} className="p-2 bg-[#F0E0D6]">
@@ -192,19 +190,17 @@ export default function Component() {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Name (optional)"
-                className="w-1/3 bg-[#F0E0D6] border-[#B7C5D9] p-1"
-              />
+                className="w-1/3 bg-[#F0E0D6] border-[#B7C5D9] p-1" />
             </div>
             <textarea
               value={comment}
               onChange={(e) => setComment(e.target.value)}
               placeholder="Comment (required)"
               className="w-full h-24 bg-[#F0E0D6] border-[#B7C5D9] p-1"
-              required
-            />
+              required />
             <div className="flex items-center space-x-2">
-              <button 
-                type="submit" 
+              <button
+                type="submit"
                 className="bg-[#0F0C5D] text-white p-1 hover:bg-[#0A0A3F] disabled:bg-gray-400"
                 disabled={!comment.trim()}
               >
@@ -216,16 +212,14 @@ export default function Component() {
                 type="checkbox"
                 id="spoiler"
                 checked={isSpoiler}
-                onChange={(e) => setIsSpoiler(e.target.checked)}
-              />
+                onChange={(e) => setIsSpoiler(e.target.checked)} />
               <label htmlFor="spoiler" className="text-[#34345C]">Spoiler</label>
             </div>
           </form>
         </div>
       </div>
-      <div className='w-full flex justify-center py-2 bg-[#D6DAF0] text-xs px-[5%] absolute bottom'>
+    </div><div className='w-full flex justify-center py-2 bg-[#D6DAF0] text-xs px-[5%]'>
         <div>All trademarks and copyrights on this page are owned by their respective parties. Images uploaded are the responsibility of the Poster. Comments are owned by the Poster.</div>
-      </div>
-    </div>
+      </div></>
   );
 }
