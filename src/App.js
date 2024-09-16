@@ -60,10 +60,10 @@ export default function Component() {
             <a href="#" className="text-[#34345C] font-bold">[a]</a>
             <a href="#" className="text-[#34345C] font-bold">[b]</a>
             <a href="#" className="text-[#34345C] font-bold">[c]</a>
-            <a href="#" className="text-[#34345C] font-bold">[d]</a>
-            <a href="#" className="text-[#34345C] font-bold">[e]</a>
-            <a href="#" className="text-[#34345C] font-bold">[f]</a>
-            <a href="#" className="text-[#34345C] font-bold">[g]</a>
+            <a href="#" className="text-[#34345C] font-bold hidden md:block">[d]</a>
+            <a href="#" className="text-[#34345C] font-bold hidden md:block">[e]</a>
+            <a href="#" className="text-[#34345C] font-bold hidden md:block">[f]</a>
+            <a href="#" className="text-[#34345C] font-bold hidden md:block">[g]</a>
           </div>
         </div>
       </header>
