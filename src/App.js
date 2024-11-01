@@ -113,7 +113,7 @@ export default function Component() {
                 <div>
                   <div>
                     <span className="font-bold text-[#117743]">Anonymous</span>
-                    <span className="text-xs"> 09/16/24(Mon)3:34:56 No.123456789</span>
+                    <span className="text-xs"> 11/01/24(Fri)3:34:56 No.123456789</span>
                   </div>
                   <div className="text-xs mt-1">File: <span className="text-[#0000EE]">puppet.jpg</span> (39 KB, 250x250)</div>
                   <p className="mt-2 whitespace-pre-wrap">
@@ -130,7 +130,7 @@ export default function Component() {
               <div className="p-2 bg-[#F0E0D6]">
                 <div>
                   <span className="font-bold text-[#117743]">Anonymous</span>
-                  <span className="text-xs"> 09/16/24(Mon)3:35:03 No.123456790</span>
+                  <span className="text-xs"> 11/01/24(Fri)3:35:03 No.123456790</span>
                 </div>
                 <p className="mt-2 whitespace-pre-wrap">
                   decode this: 01001011 01100001 01101101 01100001 01101100 01100001 00100000 01110111 01101111 01110010 01101011 01110011 00100000 01100110 01101111 01110010 00100000 01110100 01101000 01100101 00100000 01001010 01100101 01110111 01110011 00101110 00100000 01010111 01101111 01110010 01101100 01100100 00100000 01100100 01101111 01101101 01101001 01101110 01100001 01110100 01101001 01101111 01101110 00100000 01101001 01110011 00100000 01101001 01101101 01101101 01101001 01101110 01100101 01101110 01110100
@@ -146,7 +146,7 @@ export default function Component() {
                   <div>
                     <div>
                       <span className="font-bold text-[#117743]">Anonymous</span>
-                      <span className="text-xs"> 09/16/24(Mon)3:35:56 No.123456791</span>
+                      <span className="text-xs"> 11/01/24(Fri)3:35:56 No.123456791</span>
                     </div>
                     <div className="text-xs mt-1">File: <span className="text-[#0000EE]">lizard.jpg</span> (15 KB, 100x100)</div>
                     <p className="mt-2 whitespace-pre-wrap">
@@ -161,7 +161,7 @@ export default function Component() {
               <div className="p-2 bg-[#F0E0D6]">
                 <div>
                   <span className="font-bold text-[#117743]">Anonymous</span>
-                  <span className="text-xs"> 09/16/24(Mon)3:35:56 No.123456792</span>
+                  <span className="text-xs"> 11/01/24(Fri)3:35:56 No.123456792</span>
                 </div>
                 <p className="mt-2 whitespace-pre-wrap">
                   Elections are just the tip of the iceberg. Bill Gates and the cabal made my cousin gay from the mosquitoes
