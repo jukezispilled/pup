@@ -98,7 +98,7 @@ export default function Component() {
         <div className="max-w-5xl mx-auto p-2">
           <div className="bg-[#D6DAF0] p-2 mb-4">
             <h1 className="text-[#AF0A0F] font-bold text-lg">/p/ - puppet</h1>
-            <p className="text-xs mt-1">CA: updating</p>
+            <p className="text-xs mt-1">CA: updating...</p>
           </div>
 
           {/* Thread */}
