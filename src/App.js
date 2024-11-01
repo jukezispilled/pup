@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { RotateCw } from 'lucide-react';
 
 export default function Component() {
   const [name, setName] = useState('');
@@ -6,32 +7,35 @@ export default function Component() {
   const [isSpoiler, setIsSpoiler] = useState(false);
   const [replies, setReplies] = useState([]);
   const [error, setError] = useState('');
-  const [lastPostTime, setLastPostTime] = useState(0); // Track the time of the last post
-  const [nextId, setNextId] = useState(123456793); // Initial ID, you might fetch this from the server if needed
+  const [lastPostTime, setLastPostTime] = useState(0);
+  const [nextId, setNextId] = useState(123456793);
+  const [isLoading, setIsLoading] = useState(false);
 
-  // Fetch comments when the component mounts
-  useEffect(() => {
+  const fetchReplies = () => {
+    setIsLoading(true);
     fetch('/api/comments')
       .then(res => res.json())
       .then(data => {
-        // Adjust the timestamps to the user's local time
         const adjustedReplies = data.map(reply => ({
           ...reply,
           timestamp: new Date(reply.timestamp).toLocaleString(),
         }));
         setReplies(adjustedReplies);
-        // Update nextId based on the highest ID from fetched comments
         const maxId = Math.max(...data.map(reply => parseInt(reply._id, 10)));
         setNextId(maxId + 1);
       })
-      .catch(err => console.error('Error fetching comments:', err));
+      .catch(err => console.error('Error fetching comments:', err))
+      .finally(() => setIsLoading(false));
+  };
+
+  useEffect(() => {
+    fetchReplies();
   }, []);
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
     setError('');
 
-    // Check if 10 seconds have passed since the last post
     const now = Date.now();
     if (now - lastPostTime < 10000) {
       setError('You must wait 10 seconds between posts');
@@ -48,7 +52,7 @@ export default function Component() {
       comment: comment.trim(),
       isSpoiler,
       timestamp: new Date().toLocaleString(),
-      _id: nextId.toString(), // Use the counter for the ID
+      _id: nextId.toString(),
     };
 
     fetch('/api/comments', {
@@ -66,8 +70,8 @@ export default function Component() {
         setName('');
         setComment('');
         setIsSpoiler(false);
-        setLastPostTime(now); // Update the last post time
-        setNextId(nextId + 1); // Increment the ID counter
+        setLastPostTime(now);
+        setNextId(nextId + 1);
       })
       .catch((err) => console.error('Error submitting comment:', err));
   };
@@ -185,7 +189,17 @@ export default function Component() {
 
           {/* Reply Form */}
           <div className="bg-[#D6DAF0] p-2">
-            <h3 className="font-bold mb-2 text-[#0F0C5D]">Reply to Thread No.123456789</h3>
+            <div className="flex justify-between items-center mb-2">
+              <h3 className="font-bold text-[#0F0C5D]">Reply to Thread No.123456789</h3>
+              <button 
+                onClick={fetchReplies} 
+                disabled={isLoading}
+                className="text-[#34345C] hover:text-[#0F0C5D] disabled:text-gray-400"
+                title="Reload replies"
+              >
+                <RotateCw className={`w-4 h-4 ${isLoading ? 'animate-spin' : ''}`} />
+              </button>
+            </div>
             {error && <p className="text-red-500 mb-2">{error}</p>}
             <form className="space-y-2" onSubmit={handleFormSubmit}>
               <div className="flex space-x-2">
