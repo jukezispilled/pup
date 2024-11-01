@@ -15,7 +15,7 @@ async function connectToDatabase(uri) {
   });
 
   await client.connect();
-  const db = client.db('myDatabase'); // Replace with your database name
+  const db = client.db('Cluster0'); // Replace with your database name
 
   cachedClient = client;
   cachedDb = db;
