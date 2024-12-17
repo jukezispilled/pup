@@ -83,8 +83,7 @@ export default function Component() {
         <header className="bg-[#D1D5EE] border-b border-[#B7C5D9] p-1">
           <div className="max-w-5xl mx-auto flex justify-between items-center">
             <div className="flex space-x-4">
-              <a href="https://x.com/" className="text-[#34345C] font-bold">[Twitter/X]</a>
-              <a href="https://t.me/" className="text-[#34345C] font-bold">[Telegram]</a>
+              <a href="https://x.com/forumoftruth" className="text-[#34345C] font-bold">[Twitter/X]</a>
               <a href="https://pump.fun/board" className="text-[#34345C] font-bold">[Pump]</a>
             </div>
             <div className="flex space-x-4">
