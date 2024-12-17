@@ -35,18 +35,27 @@ export default function Component() {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     setError('');
-
+  
     const now = Date.now();
     if (now - lastPostTime < 10000) {
       setError('You must wait 10 seconds between posts');
       return;
     }
-
+  
     if (!comment.trim()) {
       setError('Comment is required');
       return;
     }
-
+  
+    // Disallowed words
+    const disallowedWords = ['scam', 'rug'];
+    const regex = new RegExp(`\\b(${disallowedWords.join('|')})\\b`, 'i');
+  
+    if (regex.test(comment)) {
+      setError('Your comment contains disallowed words');
+      return;
+    }
+  
     const newReply = {
       name: name.trim() || 'Anonymous',
       comment: comment.trim(),
@@ -54,7 +63,7 @@ export default function Component() {
       timestamp: new Date().toLocaleString(),
       _id: nextId.toString(),
     };
-
+  
     fetch('/api/comments', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -74,7 +83,7 @@ export default function Component() {
         setNextId(nextId + 1);
       })
       .catch((err) => console.error('Error submitting comment:', err));
-  };
+  };  
 
   return (
     <>
