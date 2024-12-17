@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { RotateCw } from 'lucide-react';
+import Marquee from 'react-fast-marquee';
 
 export default function Component() {
   const [name, setName] = useState('');
@@ -87,9 +88,21 @@ export default function Component() {
 
   return (
     <>
-      <div className="bg-[#4c5b8c] min-h-screen font-sans text-[13px] text-[#000000]">
+      <div className="bg-[#4c5b8c] min-h-screen font-sans text-[13px] text-[#000000] relative z-[-20]">
+
+        <div className="absolute bottom-[0%] w-screen z-[-10]">
+          <Marquee speed={150}>
+            {[...Array(5)].map((_, index) => (
+              <span key={index} className="text-xl md:text-3xl whitespace-nowrap flex justify-center items-center bg-[#caeaff]">
+                we want the truth | forum of truth 
+                <img src="i.gif" className='w-[50px]'></img>
+              </span>
+            ))}
+          </Marquee>
+        </div>
+
         {/* Header */}
-        <header className="bg-[#D1D5EE] border-b border-[#B7C5D9] p-1">
+        <header className="bg-[#D1D5EE] border-b border-[#B7C5D9] p-1 z-10">
           <div className="max-w-5xl mx-auto flex justify-between items-center">
             <div className="flex space-x-4">
               <a href="https://x.com/forumoftruth" className="text-[#34345C] font-bold">[Twitter/X]</a>
@@ -107,7 +120,7 @@ export default function Component() {
           </div>
         </header>
 
-        <div className="max-w-5xl mx-auto p-2">
+        <div className="max-w-5xl mx-auto p-2 z-10">
           <div className="bg-[#D6DAF0] p-2 mb-4">
             <h1 className="text-[#AF0A0F] font-bold text-lg">/t/ - truth</h1>
             <p className="text-xs mt-1">CA: uploading...</p>
@@ -138,7 +151,7 @@ export default function Component() {
             </div>
 
             {/* Replies */}
-            <div className="mt-2 space-y-2">
+            <div className="mt-2 space-y-2 z-10">
               <div className="p-2 bg-[#caeaff]">
                 <div>
                   <span className="font-bold text-[#117743]">Anonymous</span>
@@ -206,7 +219,7 @@ export default function Component() {
           </div>
 
           {/* Reply Form */}
-          <div className="bg-[#D6DAF0] p-2">
+          <div className="bg-[#D6DAF0] p-2 z-10">
             <div className="flex justify-between items-center mb-2">
               <h3 className="font-bold text-[#0F0C5D]">Reply to Thread No.123456789</h3>
               <button 
