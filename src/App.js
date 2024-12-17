@@ -88,7 +88,7 @@ export default function Component() {
 
   return (
     <>
-      <div className="bg-[#4c5b8c] min-h-screen font-sans text-[13px] text-[#000000] relative z-[-20]">
+      <div className="bg-[#4c5b8c] min-h-screen font-sans text-[13px] text-[#000000] relative z-0">
 
         <div className="absolute bottom-[0%] w-screen z-[-10]">
           <Marquee speed={150}>
