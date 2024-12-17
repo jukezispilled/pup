@@ -78,14 +78,14 @@ export default function Component() {
 
   return (
     <>
-      <div className="bg-[#EEF2FF] min-h-screen font-sans text-[13px] text-[#000000]">
+      <div className="bg-[#4c5b8c] min-h-screen font-sans text-[13px] text-[#000000]">
         {/* Header */}
         <header className="bg-[#D1D5EE] border-b border-[#B7C5D9] p-1">
           <div className="max-w-5xl mx-auto flex justify-between items-center">
             <div className="flex space-x-4">
-              <a href="https://x.com/shesapup" className="text-[#34345C] font-bold">[Twitter/X]</a>
-              <a href="https://t.me/shesapuppet" className="text-[#34345C] font-bold">[Telegram]</a>
-              <a href="https://pump.fun/ARRGXQo55NBv3xQ82TCdu6VYvM1eckAgDscksWSvpump" className="text-[#34345C] font-bold">[Pump]</a>
+              <a href="https://x.com/" className="text-[#34345C] font-bold">[Twitter/X]</a>
+              <a href="https://t.me/" className="text-[#34345C] font-bold">[Telegram]</a>
+              <a href="https://pump.fun/board" className="text-[#34345C] font-bold">[Pump]</a>
             </div>
             <div className="flex space-x-4">
               <a href="#" className="text-[#34345C] font-bold">[a]</a>
@@ -101,29 +101,29 @@ export default function Component() {
 
         <div className="max-w-5xl mx-auto p-2">
           <div className="bg-[#D6DAF0] p-2 mb-4">
-            <h1 className="text-[#AF0A0F] font-bold text-lg">/p/ - puppet</h1>
-            <p className="text-xs mt-1">CA: ARRGXQo55NBv3xQ82TCdu6VYvM1eckAgDscksWSvpump</p>
+            <h1 className="text-[#AF0A0F] font-bold text-lg">/t/ - truth</h1>
+            <p className="text-xs mt-1">CA: uploading...</p>
           </div>
 
           {/* Thread */}
           <div className="bg-[#D6DAF0] p-2 mb-4">
             {/* Original Post */}
-            <div className="p-2 bg-[#F0E0D6]">
+            <div className="p-2 bg-[#caeaff]">
               <div className="flex items-start space-x-2">
                 <img
-                  src="/pup.png"
+                  src="/drone.gif"
                   alt="Post image"
                   className="w-[100px] md:w-[150px] border border-[#D9BFB7]" />
                 <div>
                   <div>
                     <span className="font-bold text-[#117743]">Anonymous</span>
-                    <span className="text-xs"> 11/04/24, 3:33:56 AM No.123456789</span>
+                    <span className="text-xs"> 12/16/24, 3:33:56 PM No.123456789</span>
                   </div>
-                  <div className="text-xs mt-1">File: <span className="text-[#0000EE]">puppet.jpg</span> (39 KB, 250x250)</div>
+                  <div className="text-xs mt-1">File: <span className="text-[#0000EE]">drone.gif</span> (39 KB, 250x250)</div>
                   <p className="mt-2 whitespace-pre-wrap">
-                    Hey /p/,
+                    Hey /d/,
 
-                    It's near election time and I'm worried that if Kamala wins then the shadowy cabal will be in charge. It doesn't seem like she is her own person. It's like she's a puppet but we don't know the true master. Maybe Israel? Bill Gates? Wyt? Anyways this year i'll be voting for Trump even though he may not be perfect. I don't want the lizard people in charge!
+                    just wanted to make a post regarding the drone scare. I'm worried the government won't tell us the truth and we're all fucked. my neighbor said they are looking for a missing nuclear missile!? wtf! what do y'all think?
                   </p>
                 </div>
               </div>
@@ -131,30 +131,30 @@ export default function Component() {
 
             {/* Replies */}
             <div className="mt-2 space-y-2">
-              <div className="p-2 bg-[#F0E0D6]">
+              <div className="p-2 bg-[#caeaff]">
                 <div>
                   <span className="font-bold text-[#117743]">Anonymous</span>
-                  <span className="text-xs"> 11/04/24, 3:34:03 AM No.123456790</span>
+                  <span className="text-xs"> 12/16/24, 3:34:03 PM No.123456790</span>
                 </div>
                 <p className="mt-2 whitespace-pre-wrap">
-                  decode this: 01001011 01100001 01101101 01100001 01101100 01100001 00100000 01110111 01101111 01110010 01101011 01110011 00100000 01100110 01101111 01110010 00100000 01110100 01101000 01100101 00100000 01001010 01100101 01110111 01110011 00101110 00100000 01010111 01101111 01110010 01101100 01100100 00100000 01100100 01101111 01101101 01101001 01101110 01100001 01110100 01101001 01101111 01101110 00100000 01101001 01110011 00100000 01101001 01101101 01101101 01101001 01101110 01100101 01101110 01110100
+                  decode this: 01001010 01100101 01110111 01110011 00100000 01100001 01110010 01100101 00100000 01110100 01100001 01101011 01101001 01101110 01100111 00100000 01101111 01110110 01100101 01110010
                 </p>
               </div>
 
-              <div className="p-2 bg-[#F0E0D6]">
+              <div className="p-2 bg-[#caeaff]">
                 <div className="flex items-start space-x-2">
                   <img
-                    src="/bill.jpg"
+                    src="/blue.png"
                     alt="Reply image"
                     className="w-[100px] h-[100px] border border-[#D9BFB7]" />
                   <div>
                     <div>
                       <span className="font-bold text-[#117743]">Anonymous</span>
-                      <span className="text-xs"> 11/04/24, 4:35:30 AM No.123456791</span>
+                      <span className="text-xs"> 12/16/24, 4:35:30 PM No.123456791</span>
                     </div>
-                    <div className="text-xs mt-1">File: <span className="text-[#0000EE]">lizard.jpg</span> (15 KB, 100x100)</div>
+                    <div className="text-xs mt-1">File: <span className="text-[#0000EE]">beam.jpg</span> (15 KB, 100x100)</div>
                     <p className="mt-2 whitespace-pre-wrap">
-                      If you want real answers, look into lizard people. Bill Gates is one to watch out for.
+                      If you want real answers, look into Project Blue Beam.
 
                       Wake up, sheeple
                     </p>
@@ -162,29 +162,29 @@ export default function Component() {
                 </div>
               </div>
 
-              <div className="p-2 bg-[#F0E0D6]">
+              <div className="p-2 bg-[#caeaff]">
                 <div>
                   <span className="font-bold text-[#117743]">Anonymous</span>
-                  <span className="text-xs"> 11/04/24, 4:35:56 AM No.123456792</span>
+                  <span className="text-xs"> 12/16/24, 4:35:56 PM No.123456792</span>
                 </div>
                 <p className="mt-2 whitespace-pre-wrap">
-                  Elections are just the tip of the iceberg. Bill Gates and the cabal made my cousin gay from the mosquitoes
+                  Drones are just the start. Just watch
                 </p>
               </div>
 
-              <div className="p-2 bg-[#F0E0D6]">
+              <div className="p-2 bg-[#caeaff]">
                 <div>
                   <span className="font-bold text-[#117743]">Anonymous</span>
-                  <span className="text-xs"> 11/04/24, 4:45:56 AM No.123456792</span>
+                  <span className="text-xs"> 12/16/24, 4:45:56 PM No.123456792</span>
                 </div>
                 <p className="mt-2 whitespace-pre-wrap">
-                  Elon agrees too https://twitter.com/elonmusk/status/1853472314920190215?s=61&t=D6Zfg4-C7HmnYRal2vYbMg 
+                  Is Elon in on this? hope not!
                 </p>
               </div>
 
               {/* New replies */}
               {replies.map((reply) => (
-                <div key={reply._id} className="p-2 bg-[#F0E0D6]">
+                <div key={reply._id} className="p-2 bg-[#caeaff]">
                   <div>
                     <span className="font-bold text-[#117743]">{reply.name}</span>
                     <span className="text-xs"> {reply.timestamp} No.{reply._id}</span>
@@ -218,13 +218,13 @@ export default function Component() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Name (optional)"
-                  className="w-1/3 bg-[#F0E0D6] border-[#B7C5D9] p-1" />
+                  className="w-1/3 bg-[#caeaff] border-[#B7C5D9] p-1" />
               </div>
               <textarea
                 value={comment}
                 onChange={(e) => setComment(e.target.value)}
                 placeholder="Comment (required)"
-                className="w-full h-24 bg-[#F0E0D6] border-[#B7C5D9] p-1"
+                className="w-full h-24 bg-[#caeaff] border-[#B7C5D9] p-1"
                 required />
               <div className="flex items-center space-x-2">
                 <button
